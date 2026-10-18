@@ -11,10 +11,12 @@ from starlette.middleware.cors import CORSMiddleware
 app = FastAPI()
 
 EMAIL = "23f2004697@ds.study.iitm.ac.in"
+
 ALLOWED_ORIGINS = {
     "https://app-popwnv.example.com",
-    # Add the exact origin of your exam page here if different.
+    "https://exam.sanand.workers.dev",
 }
+
 
 RATE_LIMIT = 11
 WINDOW_SECONDS = 10
